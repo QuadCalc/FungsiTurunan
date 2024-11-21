@@ -11,9 +11,20 @@
 
 </head>
 <body>
+    <div id="overlay">
+        <div id="explore-container">
+            <h1>Welcome to the Universe</h1>
+            <button id="explore-button">Explore</button>
+        </div>
+    </div>
+
     <div class="stars"></div>
     <div class="twinkling"></div>
+    <div class="aurora paused"></div>
     <div class="floating-elements"></div>
+
+
+    
     <!-- Navigation -->
     <nav>
         <div class="logo" style="color: white;">Fungsi Kuadrat</div>
@@ -26,32 +37,28 @@
     </nav>
 
 
-    <!-- Header -->
-    <header id="home">
-        <h1>QuadCalc</h1>
-        <p>Fungsi Kuadrat</p>
-        <q>"Belajar dan pahami tentang fungsi kuadrat, grafik, dan kalkulasinya."</q>
-        <div class="materi-kuadrat">
-            <h2>Apa itu Fungsi Kuadrat?</h2>
-            <p>
-                Fungsi kuadrat adalah persamaan matematika dengan bentuk umum 
-                <b>f(x) = ax² + bx + c</b>, di mana <b>a</b>, <b>b</b>, dan <b>c</b> adalah konstanta, serta <b>a ≠ 0</b>.
-                Fungsi ini memiliki grafik berbentuk parabola yang dapat terbuka ke atas atau ke bawah tergantung pada nilai <b>a</b>.
-            </p>
-            <p>
-                Beberapa ciri penting fungsi kuadrat:
-            </p>
-            <ul>
-                <li><b>Titik puncak (vertex):</b> Titik tertinggi atau terendah dari parabola.</li>
-                <li><b>Sumbu simetri:</b> Garis vertikal yang membagi parabola menjadi dua bagian simetris.</li>
-                <li><b>Akar-akar:</b> Nilai x yang membuat <b>f(x) = 0</b>.</li>
-            </ul>
-            <p>
-                Fungsi kuadrat sering digunakan dalam berbagai bidang, seperti fisika, ekonomi, dan teknik untuk 
-                memodelkan peristiwa atau hubungan yang berbentuk parabola.
-            </p>
+    <header class="header-paused" id="home">
+        <div class="header-content">
+            <h1 class="header-title">QuadCalc</h1>
+            <h2 class="header-subtitle">Fungsi Kuadrat</h2>
+            <p class="header-quote">"Belajar dan pahami tentang fungsi kuadrat, grafik, dan kalkulasinya."</p>
+            <div class="header-info">
+                <h3 class="info-title">Apa itu Fungsi Kuadrat?</h3>
+                <p>
+                    Fungsi kuadrat adalah persamaan matematika berbentuk <b>f(x) = ax² + bx + c</b>, di mana <b>a</b>, <b>b</b>, dan <b>c</b> adalah konstanta, serta <b>a ≠ 0</b>. Grafik fungsi ini berbentuk parabola, yang:
+                </p>
+                <ul>
+                    <li><b>Titik Puncak (Vertex):</b> Titik tertinggi atau terendah dari parabola.</li>
+                    <li><b>Sumbu Simetri:</b> Garis vertikal yang membagi parabola menjadi dua bagian simetris.</li>
+                    <li><b>Akar-Akar:</b> Nilai <b>x</b> yang membuat <b>f(x) = 0</b>.</li>
+                </ul>
+                <p>
+                    Fungsi kuadrat sering digunakan dalam berbagai bidang, seperti <b>fisika</b>, <b>ekonomi</b>, dan <b>teknik</b> untuk memodelkan peristiwa berbentuk parabola.
+                </p>
+            </div>
         </div>
     </header>
+    
     
     
 </header>

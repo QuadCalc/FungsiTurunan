@@ -1,6 +1,27 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const overlay = document.getElementById('overlay');
+    const exploreButton = document.getElementById('explore-button');
+    const header = document.querySelector('header'); // Ambil elemen header
 
+    // Nonaktifkan scrolling
+    document.body.style.overflow = 'hidden';
 
+    // Tambahkan event listener ke tombol Explore
+    exploreButton.addEventListener('click', () => {
+        overlay.style.display = 'none';
+        document.body.style.overflow = ''; // Aktifkan kembali scrolling
 
+        // Mulai animasi header
+        header.classList.remove('header-paused');
+        header.classList.add('header-running');
+
+        // Mulai animasi elemen lainnya
+        const animatedElements = document.querySelectorAll('.paused');
+        animatedElements.forEach((el) => {
+            el.classList.remove('paused');
+        });
+    });
+});
 
 
 
